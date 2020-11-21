@@ -39,7 +39,7 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7 \
-            -t oulocl/vce-rstudio:${GITHUB_SHA::7} \
+            -t ouvocl/vce-rstudio:${GITHUB_SHA::7} \
             .
       - name: Login to DockerHub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
@@ -49,11 +49,11 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7 \
-            -t oulocl/vce-rstudio:${GITHUB_SHA::7} \
+            -t ouvocl/vce-rstudio:${GITHUB_SHA::7} \
             . \
             --push
           docker buildx build \
             --platform linux/amd64,linux/arm/v7 \
-            -t oulocl/vce-rstudio:latest \
+            -t ouvocl/vce-rstudio:latest \
             . \
             --push
