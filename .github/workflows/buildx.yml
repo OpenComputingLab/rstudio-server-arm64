@@ -15,6 +15,7 @@ on:
 jobs:
   buildx:
     runs-on: ubuntu-latest
+    timeout_minutes: 720
     steps:
       # Get the repositery's code
       - name: Checkout
@@ -36,8 +37,6 @@ jobs:
       # Build the images, without pushing
       # When I can build linux/arm64 wheels, add that to build
       - name: Run Buildx
-        with:
-          timeout_minutes: 720
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7 \
