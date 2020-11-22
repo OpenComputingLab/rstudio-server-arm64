@@ -1,4 +1,4 @@
-name: dependencies-buildx
+name: compile-buildx
 # Via: https://www.padok.fr/en/blog/multi-architectures-docker-iot
 on:
   release:
