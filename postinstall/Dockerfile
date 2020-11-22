@@ -26,3 +26,5 @@ RUN useradd rstudio \
 EXPOSE 8787
 
 CMD rstudio-server start && sleep infinity
+
+# Push as: ouvocl/vce-rstudio
