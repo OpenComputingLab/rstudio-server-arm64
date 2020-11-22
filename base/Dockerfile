@@ -12,4 +12,4 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y --no-install-recommends git wget unzip sudo pandoc openjdk-8-jdk r-base \
 	bzip2 gcc g++ coreutils lsb-release curl libcurl4-openssl-dev 
 
-# Push as: FROM ouvocl:debian-build-base
+# Push as: FROM ouvocl:debian-build-r-base

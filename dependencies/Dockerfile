@@ -1,4 +1,4 @@
-FROM ouvocl:debian-build-base
+FROM ouvocl:debian-build-r-base
 
 ENV RSTUDIO_DISABLE_CRASHPAD=1
 
