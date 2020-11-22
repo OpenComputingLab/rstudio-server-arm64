@@ -55,6 +55,5 @@ jobs:
           docker buildx build \
             --platform linux/amd64,linux/arm/v7 \
             -t ouvocl/debian-build-r-base:latest \
-            -f Dockerfile.base \
             ./base \
             --push
