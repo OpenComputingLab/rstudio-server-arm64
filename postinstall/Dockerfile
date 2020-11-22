@@ -1,4 +1,4 @@
-FROM ouvocl:rstudio-compiled
+FROM ouvocl/rstudio-compiled
 
 # post installation
 
