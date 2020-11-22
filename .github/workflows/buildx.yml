@@ -15,7 +15,7 @@ on:
 jobs:
   buildx:
     runs-on: ubuntu-latest
-    timeout_minutes: 720
+    timeout-minutes: 720
     steps:
       # Get the repositery's code
       - name: Checkout
