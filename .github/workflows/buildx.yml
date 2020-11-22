@@ -36,6 +36,8 @@ jobs:
       # Build the images, without pushing
       # When I can build linux/arm64 wheels, add that to build
       - name: Run Buildx
+        with:
+          timeout_minutes: 720
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7 \
